@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* HEADINGS: font-family: 'Poppins', sans-serif; --- 400 600
+
+
+COLORS: - Violet: hsl(257, 40%, 49%);
+- Soft Magenta: hsl(300, 69%, 71%);
+
+ */
+
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url("/images/bg-desktop.svg");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    max-width: 100%;
+    width: 85%;
+    margin-top: 32px;
+}
+
+.header  {
+  
+    width: 85%;
+}
+
+.header__logo {
+    width: 16%;
+}
+
+.main {
+    margin-top: 90px;
+}
+.card { 
+
+    display: flex; 
+    width: 100%;
+}
+
+.card__img {
+    width: 52%;
+   
+}
+
+
+
+.card__texto {
+    width: 38%;
+    margin: 10px 0 0 38px;
+    position: relative;
+}
+
+.card__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 351px;
+}
+
+.card__p {
+
+font-size: 0.95em;
+margin-bottom: 22px;
+}
+
+
+.myButton {
+	box-shadow: 4px 0px 7px -3px #000000;
+	background-color:#ffffff;
+	border-radius:28px;
+	
+	display:inline-block;
+	cursor:pointer;
+	color: hsl(257, 40%, 49%);
+   
+	font-size:17px;
+	padding: 11px 57px;
+	text-decoration:none;
+	
+}
+.myButton:hover {
+	background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+
+.card__link {
+    position: absolute;
+    right: 8px;
+    bottom: 14px;
+   
+}
+
+
+.link__logo {
+    border-radius: 50%;
+    border: white 1px solid;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+}
+
+.link__logo--hover:hover{
+border-color: hsl(300, 69%, 71%);
+color: hsl(300, 69%, 71%);
+}
+
+
+
+
+
+
+/* FOOTER */
+
+.footer { 
+    font-size: 11px; 
+    margin-top: 10px;
+    text-align: center; }
