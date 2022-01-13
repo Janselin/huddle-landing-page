@@ -140,13 +140,13 @@ color: hsl(300, 69%, 71%);
 @media screen and (max-width:480px) {
   
     body{
-        background-image: url(./images/bg-mobile.svg);
-        background-repeat: no-repeat;   
+        background: url(./images/bg-mobile.svg) no-repeat ;
+        background-size: cover;
     }
 
     .header {
         width: 100%;
-        padding: 57px 0 26px 34px;
+        padding: 14px 0 26px 34px;
     }
 
     .header__logo {
@@ -288,7 +288,8 @@ width: inherit;
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
     .container {
-        background-size: 100%;
+        background-size: cover;
+        
         height: 100vh;
     }
       .card__title {
