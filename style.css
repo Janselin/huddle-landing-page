@@ -133,7 +133,7 @@ color: hsl(300, 69%, 71%);
 
 /* RESPONSIVE */
  
-@media screen and (max-width:760px) {
+@media screen and (max-width:480px) {
   
     body{
         background-image: url(./images/bg-mobile.svg);
@@ -146,8 +146,7 @@ color: hsl(300, 69%, 71%);
     }
 
     .header__logo {
-
-width: 35%;
+    width: 35%;
 
 }
 
@@ -187,9 +186,9 @@ width: 35%;
 
     .myButton {
         
-padding: 8px 76px;        
-font-size: 13px;        
-margin-bottom: 15px;
+    padding: 8px 76px;        
+    font-size: 13px;        
+    margin-bottom: 15px;
     }
 
 
@@ -209,13 +208,13 @@ margin-bottom: 15px;
 
 
 
-/* 
-@media screen and (min-width:376px) and (max-width: 760px) {
+
+@media screen and (min-width:481px) and (max-width: 1026px) {
 
 }
 
+/* 
 @media screen and (min-width: 761px) {
 
-} */
-
+}  */
 
