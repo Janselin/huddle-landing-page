@@ -30,7 +30,7 @@ COLORS: - Violet: hsl(257, 40%, 49%);
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("/images/bg-desktop.svg") no-repeat;
+    background: url("./images/bg-desktop.svg") no-repeat;
     background-size: contain;
 }
 
