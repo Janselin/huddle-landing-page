@@ -16,24 +16,23 @@ COLORS: - Violet: hsl(257, 40%, 49%);
     max-width: 1440px;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    background: url("/images/bg-desktop.svg");
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-color: hsl(257, 40%, 49%);
+        background-color: hsl(257, 40%, 49%);
 }
 
 .container {
     max-width: 100%;
-    width: 85%;
-    margin-top: 32px;
+    width: 90%;
+    height: 100vh;
+    background: url("/images/bg-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .header  {
-  
+    margin-top: 32px;
     width: 85%;
 }
 
@@ -71,20 +70,19 @@ COLORS: - Violet: hsl(257, 40%, 49%);
 
 .card__p {
 
-font-size: 0.95em;
+font-size: 0.96em;
 margin-bottom: 22px;
+word-spacing: 2px;
 }
 
 
 .myButton {
 	box-shadow: 4px 0px 7px -3px #000000;
 	background-color:#ffffff;
-	border-radius:28px;
-	
+	border-radius:28px;	
 	display:inline-block;
 	cursor:pointer;
-	color: hsl(257, 40%, 49%);
-   
+	color: hsl(257, 40%, 49%);   
 	font-size:17px;
 	padding: 11px 57px;
 	text-decoration:none;
@@ -101,7 +99,6 @@ margin-bottom: 22px;
     position: absolute;
     right: 8px;
     bottom: 14px;
-   
 }
 
 
@@ -126,12 +123,99 @@ color: hsl(300, 69%, 71%);
 
 
 
-
-
-
 /* FOOTER */
 
-.footer { 
-    font-size: 11px; 
-    margin-top: 10px;
-    text-align: center; }
+.footer {
+    font-size: 11px;
+    text-align: center;
+    }
+
+
+/* RESPONSIVE */
+ 
+@media screen and (max-width:760px) {
+  
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;   
+    }
+
+    .header {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header__logo {
+
+width: 35%;
+
+}
+
+    .container, .card, .main, .card__texto, .card__link {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        height: fit-content;
+    }
+   
+    .container, .card {
+        margin-top: 37px;
+    }
+      
+    .card__img {
+        width: 95%;
+    }
+
+    .card__texto {
+        width: 87%;
+        margin: 0;
+        align-content: center;
+    }
+
+    .card__title {
+        font-size: 1.4em;
+        width: fit-content;
+    }
+
+    .card__p {
+        font-size: 0.95em;
+    }
+
+    .myButton {
+        
+padding: 8px 76px;        
+font-size: 13px;        
+margin-bottom: 15px;
+    }
+
+
+.card__link {
+    flex-direction: row;
+    position: static;    
+}
+
+.link__logo {
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 0.8em;
+    margin: 8px;
+ }
+}
+
+
+
+/* 
+@media screen and (min-width:376px) and (max-width: 760px) {
+
+}
+
+@media screen and (min-width: 761px) {
+
+} */
+
+
